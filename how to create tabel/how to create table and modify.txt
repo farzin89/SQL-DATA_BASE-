@@ -1,0 +1,41 @@
+## how to create table
+
+first of here I will write some necessary command :
+
+tipe of data : INT , DECIMAL(M,N), VARCHAR(M),BLOB,DATE "YYYY-MM-DD",TIMESTAMP"YYYY-MM-DD HH:MM:SS"
+PRIMARY KEY : AUTO_INCREMENT,NOT NULL,DEFAULT value, UNIQUE
+
+# first tabel 
+
+CREATE TABLE customers (
+   customer_id INT PRIMARY KEY AUTO_INCREMENT,
+   first_name VARCHAR(50)  NOT NULL,
+   last_name VARCHAR(50)  NOT NULL,
+   birth_date DATE,
+   points INT DEFAULT 0 
+)
+
+# second table 
+
+CREATE TABLE orders (
+   order_id INT PRIMARY KEY AUTO_INCREMENT,
+   product VARCHAR(50)  NOT NULL,
+   price DECIMAL(5,2)  NOT NULL,
+   customer_id INT,
+   FOREIGN KEY (customer_id) REFERENCES customers(customer_id) ON DELETE SET NULL
+)
+
+### in order to delet the table we can use:
+ "DROP TABLE orders"
+
+### in order to change somthing from our table (like type) we can use:
+"ALTER TABLE orders
+MODIFY COLUMN price DECIMAL(5,2) DEFAULT 20"
+
+### how to add somthing in our table (like type or some other thing):
+"ALTER TABLE orders
+ADD COLUMN porder_date DATE NOT NULL"
+
+### how to delet column from our table" 
+"ALTER TABLE orders
+DROP COLUMN porder_date"
