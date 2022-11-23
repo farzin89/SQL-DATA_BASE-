@@ -87,3 +87,17 @@ UPDATE orders
 SET customer_id  = 4
 WHERE order_id = 7
 .................................................................................
+
+### another method to update 
+
+UPDATE orders 
+SET price = 1050
+WHERE product = "GALAXY s21"
+.................................................................................
+update two value in one command
+
+UPDATE orders 
+SET product = "Nokia 3310 old", price =55
+WHERE product = "Nokia 3310"
+
+................................................................................
