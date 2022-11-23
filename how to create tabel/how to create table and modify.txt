@@ -39,3 +39,21 @@ ADD COLUMN porder_date DATE NOT NULL"
 ### how to delet column from our table" 
 "ALTER TABLE orders
 DROP COLUMN porder_date"
+......................................................................................
+## How to add data into table
+ 
+INSERT INTO customers(
+      customer_id,
+      first_name,
+      last_name,
+      birth_date,
+      points
+) 
+VALUES (
+   DEFAULT,
+  "Sarah",
+  "Conner",
+  "1987-03-09",
+  2200
+)
+.....................................................................................
