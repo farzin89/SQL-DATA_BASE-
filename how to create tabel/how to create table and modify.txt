@@ -111,3 +111,8 @@ FROM customers
 -- how to remove repetetive data from Table (with DISTINCT command)
 SELECT DISTINCT customer_id
 FROM orders
+...............................................................................
+-- how to use  or ,and ,...command (with DISTINCT command)
+SELECT *
+FROM orders
+WHERE price > 1000 AND customer_id = 3
