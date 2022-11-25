@@ -101,3 +101,8 @@ SET product = "Nokia 3310 old", price =55
 WHERE product = "Nokia 3310"
 
 ................................................................................
+-- how to show specific column and add somthing with select command
+SELECT first_name AS f_name,
+last_name AS l_name,
+points + 10 AS point_and_bonus
+FROM customers
