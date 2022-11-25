@@ -116,3 +116,10 @@ FROM orders
 SELECT *
 FROM orders
 WHERE price > 1000 AND customer_id = 3
+...............................................................................
+another method to use or command(use IN)
+
+SELECT *
+FROM orders
+WHERE customer_id IN (3 , 6)
+..............................................................................
