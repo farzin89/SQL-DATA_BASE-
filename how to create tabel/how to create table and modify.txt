@@ -106,3 +106,8 @@ SELECT first_name AS f_name,
 last_name AS l_name,
 points + 10 AS point_and_bonus
 FROM customers
+
+...............................................................................
+-- how to remove repetetive data from Table (with DISTINCT command)
+SELECT DISTINCT customer_id
+FROM orders
