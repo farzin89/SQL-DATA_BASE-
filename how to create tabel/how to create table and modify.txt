@@ -123,3 +123,17 @@ SELECT *
 FROM orders
 WHERE customer_id IN (3 , 6)
 ..............................................................................
+-- how to use  between command
+SELECT *
+FROM orders
+WHERE price BETWEEN 800 and 1500
+.............................................................................
+-- how to extract especific column with name( use LIKE ".....%")
+SELECT *
+FROM orders
+WHERE product LIKE "Galaxy%"
+.............................................................................
+-- how to extract especific column with name(use LIKE"%...%)
+SELECT *
+FROM orders
+WHERE product LIKE "%no%"
