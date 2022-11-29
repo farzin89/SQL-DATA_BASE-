@@ -166,3 +166,10 @@ FROM orders o
 JOIN customers c
 ON o.customer_id = c.customer_id
 ...........................................................................
+-- OUTER JOIN => 1.LEFT(show every thing in first table if one item is in first table and is not in second table the result will be NULL)
+-- 2.RIGHT (show every thing in second table if one item is in second table and is not in first table the result will be NULL)
+SELECT o.order_id,o.product, o.price, o.customer_id, c.first_name,c.last_name
+FROM orders o
+LEFT JOIN customers c
+ON o.customer_id= c.customer_id 
+............................................................................
