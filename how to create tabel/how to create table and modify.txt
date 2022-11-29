@@ -152,3 +152,17 @@ SELECT *
  ORDER BY points DESC 
  LIMIT 3
 ............................................................................
+-- with this command it will show 3 column after top 2 
+-- show top 3 point
+SELECT *
+ FROM customers
+ WHERE points > 50
+ ORDER BY points DESC 
+ LIMIT 2,3
+............................................................................
+-- how to join two table 
+SELECT * 
+FROM orders o
+JOIN customers c
+ON o.customer_id = c.customer_id
+...........................................................................
